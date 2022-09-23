@@ -1,0 +1,244 @@
+:root{
+  --grey: #BDBDBD;
+  --teal: #26a69a;
+}
+
+body {
+  /* overflow: hidden; */
+  margin: 0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  /* overflow: scroll; */
+  padding-bottom: 150px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p, a, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+a:active{
+  color: black;
+}
+
+a.hover-black:hover{
+  color: black;
+}
+
+.form-control:focus{
+  box-shadow: none;
+}
+
+path {
+	fill: none;
+	stroke: rgb(26, 59, 59);
+}
+circle {
+	fill: #26a69a;
+}
+rect {
+	fill: #fff;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.hide-scroll::-webkit-scrollbar{
+  display: none;
+}
+
+/* Fonts */
+.uppercase{
+  text-transform: uppercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.bold{
+  font-weight: bold;
+}
+
+
+/* Colors */
+.theme_grey{
+  color: var(--grey);
+}
+
+.theme_teal{
+  color: var(--teal);
+}
+
+.theme_white{
+  color: white;
+}
+
+/* Background Colors */
+.teal-bg{
+  background-color: var(--teal);
+}
+
+/* Buttons */
+.custom-button{
+  background-color: transparent;
+  border-radius: 4px;
+  border: none;
+  padding: 0.75rem 2rem;
+}
+.custom-button:active, .custom-button:hover, .custom-button:focus, .custom-button:focus-visible{
+  box-shadow: none;
+  outline: none;
+  border: none;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+}
+
+.green-button{
+  background-color: var(--teal);
+  color: white;
+  border: 1px solid var(--teal);
+
+}
+.grey-button{
+  background-color: var(--grey);
+  color: black;
+  border: 1px solid var(--grey);
+}
+.green-button:hover, .green-button:focus{
+  background-color: var(--teal) !important;
+}
+.grey-button:hover, .grey-button:focus{
+  background-color: var(--grey) !important;
+  color: black;
+}
+
+.card-title{
+	background-color: var(--teal);
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btn-floating.btn-small.waves-effect.waves-light.close{
+	top: 12px;
+	right: 10px;
+	border: none;
+	background: transparent;
+	color: white;
+	font-size: x-large;
+}
+
+.btn-floating.btn-small.waves-effect.waves-light{
+	border: none;
+	border-radius: 20px;
+	color: white;
+	background: var(--teal);
+	width: 35px;
+	height: 35px;
+	font-size: x-large;
+  padding-top: 6px;
+}
+
+.btn-floating.btn-small.waves-effect.waves-light.logout{
+	border: none;
+	border-radius: 20px;
+	color: white;
+	background: var(--teal);
+	width: 35px;
+	height: 35px;
+	font-size: xx-large;
+  padding-top: 6px;
+}
+
+.edit-btn{
+  color: #747474;
+}
+.edit-btn:hover{
+  color: var(--teal);
+}
+
+
+
+/* Getting Started */
+
+.accounts--profile-picture{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.accounts--profile-picture .hover-placeholder{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.09);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.accounts--profile-picture:hover .hover-placeholder{
+  display: flex;
+}
+
+.timeline-heading {
+  color: black;
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+.vertical-timeline::before {
+  top: 10% !important;
+  --line-color: black;
+}
+.vertical-timeline-element-icon {
+  -webkit-box-shadow: 0 0 0 4px rgb(0, 0, 0), inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 0 4px rgb(0, 0, 0), inset 0 2px 0rgba (0, 0, 0, 0.08),
+    0 3px 0 4pxrgba (0, 0, 0, 0.05) !important;
+}
+
+.vertical-timeline-element-content {
+  -webkit-box-shadow: 0 0px 0 #ddd !important;
+  box-shadow: 0 0px 0 #ddd !important;
+  /* border: 3px solid black !important; */
+}
+
+.timeline-content-image {
+  /* border: 5px solid white; */
+  object-fit: cover;
+}
+
+.vertical-timeline-element--professional .vertical-timeline-element-content,
+.vertical-timeline-element--academic .vertical-timeline-element-content {
+  padding: 0 !important;
+}
+
+.vertical-timeline-element--academic .vertical-timeline-element-content {
+  min-height: 200px;
+}
+
+/*MAP CSS**/
+
+.leaflet-container {
+  height: 100vh;
+  width: 100vw;
+}

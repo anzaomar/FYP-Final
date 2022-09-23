@@ -1,0 +1,36 @@
+{
+		"username": "farhan.ali",
+		"first_name": "Farhan",
+		"last_name": "Ali",
+		"gender": "M",
+		"dob": {
+		"$date": "2019-08-01T00:00:00Z"
+		},
+		"phone_number": "03001000203",
+		"academic_info": [{             
+			"institute": "SZABIST",
+			"program": "BSCS",
+			"batch": "2018",
+			"section": "A"
+		}],
+		"professional_info":[{
+			"company": "ZAPCOM",
+			"job_title": "Senior Software Engineer",
+			"start_date": {
+				"$date": "2021-01-03T00:00:00Z"
+			},
+			"end_date": {
+				"$date": "2022-01-03T00:00:00Z"
+			}
+		},
+			{
+			"company": "GridsHub",
+			"job_title": "Senior Software Engineer",
+			"start_date": {
+				"$date": "2020-01-03T00:00:00Z"
+			},
+			"end_date": {
+				"$date": "2021-01-03T00:00:00Z"
+			}
+		}]
+	}

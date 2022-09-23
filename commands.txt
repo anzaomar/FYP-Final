@@ -1,0 +1,1 @@
+mongoimport --db connections --collection user_info --file info.json --jsonArray

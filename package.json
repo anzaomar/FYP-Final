@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "collections backend server",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix frontend",
+    "socket-install": "npm install --prefix socket",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix frontend",
+    "fyp": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Omar Farooq Malik",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "leaflet": "^1.8.0",
+    "material-icons": "^1.11.10",
+    "materialize-css": "^1.0.0-rc.2",
+    "mongoose": "^6.2.0",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.7.0"
+  }
+}
